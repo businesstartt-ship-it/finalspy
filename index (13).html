@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anvaya Spice Co. — The Estate Four</title>
+<meta name="description" content="Four single-origin whole spices, milled in small batches and delivered cash on delivery.">
+
+<!-- ============================================================
+     META PIXEL — replace YOUR_PIXEL_ID with the ID from
+     Meta Events Manager (business.facebook.com/events_manager2)
+     ============================================================ -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', 'YOUR_PIXEL_ID');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"
+/></noscript>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500&display=swap');
+
+  :root{
+    --ink:#19120c;
+    --ink2:#241a12;
+    --ink3:#2d2116;
+    --paper:#f4ecdc;
+    --paper-dim:#cabfa9;
+    --gold:#c99a3e;
+    --gold-dim:#8a6b2c;
+    --brick:#a8432a;
+    --clove:#67754a;
+    --line:rgba(244,236,220,0.14);
+    --line-strong:rgba(244,236,220,0.28);
+    --danger:#d3654c;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--ink);
+    color:var(--paper);
+    font-family:'Work Sans', sans-serif;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{font-family:'Fraunces', serif; font-weight:500; line-height:1.15; letter-spacing:-0.01em;}
+  img{display:block; max-width:100%;}
+  a{color:inherit;}
+  button{font-family:inherit; cursor:pointer;}
+  .wrap{max-width:1120px; margin:0 auto; padding:0 28px;}
+  .hidden{display:none !important;}
+
+  header{
+    position:sticky; top:0; z-index:50;
+    background:rgba(25,18,12,0.92);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .headbar{display:flex; align-items:center; justify-content:space-between; padding:18px 28px;}
+  .wordmark{font-family:'Fraunces', serif; font-size:22px; font-weight:600; letter-spacing:0.01em;}
+  .wordmark span{color:var(--gold);}
+  .headnav{display:flex; align-items:center; gap:28px; font-size:14px;}
+  .headnav a{text-decoration:none; color:var(--paper-dim); transition:color .15s;}
+  .headnav a:hover{color:var(--paper);}
+  .cart-btn{
+    border:1px solid var(--line-strong); background:transparent; color:var(--paper);
+    padding:9px 18px; border-radius:2px; font-size:14px; display:flex; align-items:center; gap:8px;
+  }
+  .cart-count{
+    background:var(--gold); color:var(--ink); font-size:11px; font-weight:500;
+    width:18px; height:18px; border-radius:50%; display:flex; align-items:center; justify-content:center;
+  }
+
+  .hero{padding:88px 0 96px;}
+  .hero-grid{display:grid; grid-template-columns:1.05fr 0.95fr; gap:64px; align-items:center;}
+  .hero-eyebrow{color:var(--gold); font-size:14px; margin-bottom:22px;}
+  .hero h1{font-size:56px; margin-bottom:24px;}
+  .hero h1 em{font-style:italic; color:var(--gold);}
+  .hero p.lede{font-size:18px; color:var(--paper-dim); max-width:460px; margin-bottom:36px;}
+  .hero-actions{display:flex; gap:16px; align-items:center;}
+  .btn-primary{
+    background:var(--gold); color:var(--ink); border:none; padding:15px 30px;
+    font-size:15px; font-weight:500; border-radius:2px; transition:background .15s;
+  }
+  .btn-primary:hover{background:#dcae4e;}
+  .btn-primary:disabled{opacity:0.6; cursor:default;}
+  .btn-ghost{
+    background:transparent; border:1px solid var(--line-strong); color:var(--paper);
+    padding:14px 26px; font-size:15px; border-radius:2px; transition:border-color .15s;
+  }
+  .btn-ghost:hover{border-color:var(--gold);}
+
+  .hero-visual{position:relative; height:420px;}
+  .swatch{position:absolute; border-radius:50%; box-shadow:0 30px 60px -20px rgba(0,0,0,0.6);}
+  .sw1{width:230px; height:230px; top:10px; left:60px; background:radial-gradient(circle at 32% 28%, #e0b34e, #a8432a 78%);}
+  .sw2{width:170px; height:170px; top:190px; left:220px; background:radial-gradient(circle at 34% 30%, #8fa06c, #465532 80%);}
+  .sw3{width:140px; height:140px; top:0px; left:280px; background:radial-gradient(circle at 30% 26%, #d9c58e, #6b4a26 80%);}
+  .sw4{width:120px; height:120px; top:260px; left:40px; background:radial-gradient(circle at 34% 30%, #c96a4b, #6e2416 80%);}
+  .grain{position:absolute; inset:0; opacity:0.5; mix-blend-mode:overlay; pointer-events:none;}
+
+  section{padding:96px 0;}
+  .section-head{max-width:560px; margin-bottom:56px;}
+  .section-head .kicker{color:var(--gold); font-size:14px; margin-bottom:14px;}
+  .section-head h2{font-size:36px;}
+  .section-head p{color:var(--paper-dim); margin-top:16px; font-size:16px;}
+
+  .pillars{border-top:1px solid var(--line);}
+  .pillar-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); border:1px solid var(--line);}
+  .pillar{background:var(--ink); padding:40px 34px;}
+  .pillar h3{font-size:21px; margin-bottom:12px;}
+  .pillar p{color:var(--paper-dim); font-size:15px;}
+  .pillar .mark{width:34px; height:34px; border:1px solid var(--gold-dim); border-radius:50%; margin-bottom:22px; position:relative;}
+  .pillar .mark::after{content:""; position:absolute; inset:9px; border-radius:50%; background:var(--gold);}
+
+  .combo-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:22px;}
+  .spice-card{background:var(--ink2); border:1px solid var(--line); border-radius:3px; overflow:hidden;}
+  .spice-art{height:150px; position:relative;}
+  .spice-body{padding:22px 20px 24px;}
+  .spice-body .origin{font-size:12.5px; color:var(--gold); margin-bottom:8px;}
+  .spice-body h3{font-size:19px; margin-bottom:8px;}
+  .spice-body p{font-size:14px; color:var(--paper-dim); margin-bottom:14px;}
+  .spice-body .weight{font-size:12.5px; color:var(--paper-dim); border-top:1px solid var(--line); padding-top:12px;}
+
+  .order-shell{background:var(--ink2); border:1px solid var(--line-strong); border-radius:4px; display:grid; grid-template-columns:1fr 380px;}
+  .order-left{padding:44px; border-right:1px solid var(--line);}
+  .order-left h3{font-size:26px; margin-bottom:10px;}
+  .order-left .sub{color:var(--paper-dim); font-size:15px; margin-bottom:26px;}
+  .order-items{list-style:none; margin-bottom:26px;}
+  .order-items li{display:flex; justify-content:space-between; padding:11px 0; border-bottom:1px solid var(--line); font-size:14.5px;}
+  .order-items li span:last-child{color:var(--paper-dim);}
+  .trust-row{display:flex; gap:22px; font-size:13px; color:var(--paper-dim); flex-wrap:wrap;}
+  .trust-row .item{display:flex; align-items:center; gap:8px;}
+  .trust-dot{width:6px; height:6px; border-radius:50%; background:var(--gold); flex-shrink:0;}
+
+  .order-right{padding:44px 38px; display:flex; flex-direction:column; justify-content:space-between;}
+  .price-row{display:flex; align-items:baseline; gap:12px; margin-bottom:6px;}
+  .price-now{font-family:'Fraunces', serif; font-size:34px;}
+  .price-was{font-size:16px; color:var(--paper-dim); text-decoration:line-through;}
+  .price-save{font-size:13px; color:var(--clove); margin-bottom:26px;}
+  .qty-row{display:flex; align-items:center; justify-content:space-between; margin-bottom:26px;}
+  .qty-label{font-size:14px; color:var(--paper-dim);}
+  .qty-stepper{display:flex; align-items:center; border:1px solid var(--line-strong); border-radius:2px;}
+  .qty-stepper button{background:transparent; border:none; color:var(--paper); width:38px; height:38px; font-size:16px;}
+  .qty-stepper span{width:34px; text-align:center; font-size:15px;}
+  .order-total{display:flex; justify-content:space-between; font-size:15px; padding:16px 0; border-top:1px solid var(--line); margin-bottom:20px;}
+  .order-total strong{font-family:'Fraunces', serif; font-size:20px;}
+  .cod-note{font-size:12.5px; color:var(--paper-dim); margin-top:14px; text-align:center;}
+
+  #checkout{border-top:1px solid var(--line);}
+  .checkout-shell{max-width:640px; margin:0 auto;}
+  .field-row{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
+  .field{margin-bottom:18px;}
+  .field label{display:block; font-size:13px; color:var(--paper-dim); margin-bottom:8px;}
+  .field input, .field textarea{
+    width:100%; background:var(--ink2); border:1px solid var(--line-strong); color:var(--paper);
+    padding:13px 14px; font-size:15px; font-family:inherit; border-radius:2px;
+  }
+  .field input:focus, .field textarea:focus{outline:none; border-color:var(--gold);}
+  .field textarea{resize:vertical; min-height:80px;}
+  .field-error{color:var(--danger); font-size:12.5px; margin-top:6px; display:none;}
+  .field.err input, .field.err textarea{border-color:var(--danger);}
+  .field.err .field-error{display:block;}
+  .checkout-summary{
+    background:var(--ink2); border:1px solid var(--line); border-radius:3px; padding:18px 20px; margin-bottom:26px;
+    display:flex; justify-content:space-between; align-items:center; font-size:14.5px;
+  }
+  .checkout-summary strong{font-family:'Fraunces', serif; font-size:20px;}
+  .submit-row{display:flex; align-items:center; gap:18px; margin-top:8px; flex-wrap:wrap;}
+  .submit-note{font-size:12.5px; color:var(--paper-dim);}
+  .submit-error{color:var(--danger); font-size:13.5px; margin-top:14px; display:none;}
+
+  .confirm-shell{max-width:520px; margin:0 auto; text-align:center; padding:20px 0;}
+  .confirm-mark{width:56px; height:56px; border:1px solid var(--gold); border-radius:50%; margin:0 auto 26px; display:flex; align-items:center; justify-content:center;}
+  .confirm-shell h2{font-size:30px; margin-bottom:14px;}
+  .confirm-shell p{color:var(--paper-dim); margin-bottom:8px;}
+  .confirm-ref{
+    display:inline-block; margin:20px 0 30px; padding:10px 20px; border:1px solid var(--line-strong);
+    font-family:'Fraunces', serif; font-size:16px; border-radius:2px; letter-spacing:0.02em;
+  }
+
+  footer{border-top:1px solid var(--line); padding:56px 0 40px;}
+  .foot-grid{display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:32px;}
+  .foot-brand p{color:var(--paper-dim); font-size:14px; max-width:320px; margin-top:12px;}
+  .foot-contact{font-size:14px; color:var(--paper-dim);}
+  .foot-contact div{margin-bottom:6px;}
+  .foot-bottom{margin-top:44px; padding-top:22px; border-top:1px solid var(--line); font-size:12.5px; color:var(--paper-dim);}
+
+  @media(max-width:860px){
+    .hero-grid{grid-template-columns:1fr; gap:40px;}
+    .hero h1{font-size:38px;}
+    .hero-visual{height:280px;}
+    .pillar-grid{grid-template-columns:1fr;}
+    .combo-grid{grid-template-columns:1fr 1fr;}
+    .order-shell{grid-template-columns:1fr;}
+    .order-left{border-right:none; border-bottom:1px solid var(--line);}
+    .field-row{grid-template-columns:1fr;}
+    .headnav{display:none;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="headbar">
+    <!-- EDIT: replace with <img src="logo.png" height="28"> once you add your logo file to this folder -->
+    <div class="wordmark">Anvaya <span>Spice Co.</span></div>
+    <nav class="headnav">
+      <a href="#pillars">Why us</a>
+      <a href="#combo">The combo</a>
+      <a href="#order">Pricing</a>
+    </nav>
+    <button class="cart-btn" onclick="document.getElementById('order').scrollIntoView({behavior:'smooth'})">
+      Order now <span class="cart-count" id="headCount">1</span>
+    </button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="hero-eyebrow">Single-origin · Small-batch · Milled to order</div>
+      <h1>Spice, the way<br>it used to <em>taste</em>.</h1>
+      <p class="lede">Four whole spices, sourced from a single named estate each, milled the week you order and sealed in glass. Nothing like the tin on the supermarket shelf.</p>
+      <div class="hero-actions">
+        <button class="btn-primary" onclick="document.getElementById('order').scrollIntoView({behavior:'smooth'})">Get the Estate Four</button>
+        <button class="btn-ghost" onclick="document.getElementById('combo').scrollIntoView({behavior:'smooth'})">See what's inside</button>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="swatch sw1"></div>
+      <div class="swatch sw2"></div>
+      <div class="swatch sw3"></div>
+      <div class="swatch sw4"></div>
+      <svg class="grain" width="100%" height="100%">
+        <filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/></filter>
+        <rect width="100%" height="100%" filter="url(#noise)"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="pillars" id="pillars">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">Why it costs more</div>
+      <h2>Three decisions that add up</h2>
+      <p>We didn't set out to be the cheapest jar on the shelf. Here's where the difference actually comes from.</p>
+    </div>
+    <div class="pillar-grid">
+      <div class="pillar">
+        <div class="mark"></div>
+        <h3>Named-estate sourcing</h3>
+        <p>Every spice is traced to one farm, not a blended lot. You can ask us where yours grew.</p>
+      </div>
+      <div class="pillar">
+        <div class="mark"></div>
+        <h3>Milled after you order</h3>
+        <p>Whole pods and bark sit in cold storage; we grind in small batches so the oils haven't faded by the time it reaches you.</p>
+      </div>
+      <div class="pillar">
+        <div class="mark"></div>
+        <h3>Packaging that keeps it that way</h3>
+        <p>UV-blocking glass and a one-way valve, not a stapled paper pouch that goes stale in a month.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="combo">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">One box, four estates</div>
+      <h2>The Estate Four</h2>
+      <p>Our only combo, built to cover most of a serious kitchen's spice rack in one order.</p>
+    </div>
+    <div class="combo-grid">
+      <!-- EDIT: swap each .spice-art div's background for a real photo:
+           <div class="spice-art"><img src="chilli.jpg" style="width:100%;height:100%;object-fit:cover"></div> -->
+      <div class="spice-card">
+        <div class="spice-art" style="background:radial-gradient(circle at 34% 26%, #d9503a, #6e2416 82%);"></div>
+        <div class="spice-body">
+          <div class="origin">Kashmir Valley</div>
+          <h3>Kashmiri chilli</h3>
+          <p>Deep color, gentle heat. Built for color-forward curries and tempering oil.</p>
+          <div class="weight">100g glass jar</div>
+        </div>
+      </div>
+      <div class="spice-card">
+        <div class="spice-art" style="background:radial-gradient(circle at 34% 26%, #c9a066, #6b4a26 82%);"></div>
+        <div class="spice-body">
+          <div class="origin">Central highlands, Sri Lanka</div>
+          <h3>Ceylon cinnamon</h3>
+          <p>The true, papery-soft quill — sweeter and lighter than the cassia bark most brands sell as cinnamon.</p>
+          <div class="weight">80g, whole quills</div>
+        </div>
+      </div>
+      <div class="spice-card">
+        <div class="spice-art" style="background:radial-gradient(circle at 34% 26%, #4a4034, #201a14 82%);"></div>
+        <div class="spice-body">
+          <div class="origin">Malabar coast</div>
+          <h3>Malabar black pepper</h3>
+          <p>Hand-picked, sun-dried peppercorns with the sharp, resinous heat the coast is known for.</p>
+          <div class="weight">100g, whole corns</div>
+        </div>
+      </div>
+      <div class="spice-card">
+        <div class="spice-art" style="background:radial-gradient(circle at 34% 26%, #e0b34e, #8a6b2c 82%);"></div>
+        <div class="spice-body">
+          <div class="origin">Alleppey</div>
+          <h3>Alleppey turmeric</h3>
+          <p>The highest-curcumin turmeric grown, giving the deep gold color and earthy bitterness this region is prized for.</p>
+          <div class="weight">100g, stone-ground</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="order">
+  <div class="wrap">
+    <div class="order-shell">
+      <div class="order-left">
+        <h3>Reserve the Estate Four</h3>
+        <div class="sub">Cash on delivery. We call to confirm before it ships.</div>
+        <ul class="order-items">
+          <li><span>Kashmiri chilli, 100g</span><span>Included</span></li>
+          <li><span>Ceylon cinnamon, 80g</span><span>Included</span></li>
+          <li><span>Malabar black pepper, 100g</span><span>Included</span></li>
+          <li><span>Alleppey turmeric, 100g</span><span>Included</span></li>
+        </ul>
+        <div class="trust-row">
+          <div class="item"><span class="trust-dot"></span>Pay when it arrives</div>
+          <div class="item"><span class="trust-dot"></span>Ships in 2–4 days</div>
+          <div class="item"><span class="trust-dot"></span>We call before dispatch</div>
+        </div>
+      </div>
+      <div class="order-right">
+        <div>
+          <div class="price-row">
+            <span class="price-now" id="priceNow">৳1,450</span>
+            <span class="price-was">৳2,000</span>
+          </div>
+          <div class="price-save">You save ৳550 versus buying these separately</div>
+          <div class="qty-row">
+            <span class="qty-label">Boxes</span>
+            <div class="qty-stepper">
+              <button onclick="changeQty(-1)" aria-label="Decrease quantity">−</button>
+              <span id="qtyVal">1</span>
+              <button onclick="changeQty(1)" aria-label="Increase quantity">+</button>
+            </div>
+          </div>
+          <div class="order-total">
+            <span>Total (COD)</span>
+            <strong id="orderTotal">৳1,450</strong>
+          </div>
+        </div>
+        <div>
+          <button class="btn-primary" style="width:100%;" onclick="showCheckout()">Continue to delivery details</button>
+          <div class="cod-note">No payment now. You only pay the delivery agent, once your order is confirmed by phone.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="checkout" class="hidden">
+  <div class="wrap checkout-shell">
+    <div class="section-head" style="margin-bottom:34px;">
+      <div class="kicker">Last step</div>
+      <h2>Where should it go?</h2>
+      <p>We'll call this number to confirm your order before anything ships.</p>
+    </div>
+
+    <div class="checkout-summary">
+      <span>Estate Four × <span id="ckQty">1</span></span>
+      <strong id="ckTotal">৳1,450</strong>
+    </div>
+
+    <form id="orderForm" onsubmit="return submitOrder(event)">
+      <div class="field-row">
+        <div class="field" id="f-name">
+          <label for="custName">Full name</label>
+          <input type="text" id="custName" placeholder="Your name">
+          <div class="field-error">Enter your name.</div>
+        </div>
+        <div class="field" id="f-phone">
+          <label for="custPhone">Phone number</label>
+          <input type="tel" id="custPhone" placeholder="01XXXXXXXXX">
+          <div class="field-error">Enter a valid phone number.</div>
+        </div>
+      </div>
+      <div class="field" id="f-address">
+        <label for="custAddress">Delivery address</label>
+        <textarea id="custAddress" placeholder="House, road, area"></textarea>
+        <div class="field-error">Enter your delivery address.</div>
+      </div>
+      <div class="field-row">
+        <div class="field" id="f-city">
+          <label for="custCity">City</label>
+          <input type="text" id="custCity" placeholder="Dhaka">
+          <div class="field-error">Enter your city.</div>
+        </div>
+        <div class="field" id="f-area">
+          <label for="custArea">Area / landmark</label>
+          <input type="text" id="custArea" placeholder="Optional">
+        </div>
+      </div>
+      <div class="field">
+        <label for="custNote">Note for us (optional)</label>
+        <textarea id="custNote" placeholder="Best time to call, delivery instructions, etc."></textarea>
+      </div>
+      <div class="submit-row">
+        <button type="submit" class="btn-primary" id="submitBtn">Place order — cash on delivery</button>
+        <span class="submit-note">By ordering, you agree to receive one confirmation call.</span>
+      </div>
+      <div class="submit-error" id="submitError">Something went wrong sending your order. Please try again, or call us directly.</div>
+    </form>
+  </div>
+</section>
+
+<section id="confirm" class="hidden">
+  <div class="wrap confirm-shell">
+    <div class="confirm-mark">✓</div>
+    <h2>Order received</h2>
+    <p>We'll call <strong id="confPhone"></strong> within 24 hours to confirm before it ships.</p>
+    <p>Save this reference for when we call.</p>
+    <div class="confirm-ref" id="confRef">#0000</div>
+    <div>
+      <button class="btn-ghost" onclick="location.reload()">Place another order</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="wordmark">Anvaya <span>Spice Co.</span></div>
+        <p>Single-origin whole spices, milled in small batches and sold direct — no distributor, no warehouse sitting for months.</p>
+      </div>
+      <div class="foot-contact">
+        <!-- EDIT: put your real number here -->
+        <div>Call or WhatsApp: +880 1XXX-XXXXXX</div>
+        <div>Dhaka, Bangladesh</div>
+        <div>Cash on delivery, nationwide</div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Anvaya Spice Co.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  /* ============================================================
+     EDIT ZONE — everything you need to change is here.
+     ============================================================ */
+  const CONFIG = {
+    unitPrice: 1450,
+    marketPrice: 2000,
+    currency: '৳',
+    // Web3Forms — free access key from https://web3forms.com (250 submissions/month free)
+    web3formsAccessKey: '5e39d341-89f8-4711-8549-d6e60811af68'
+  };
+
+  let qty = 1;
+  const fmt = n => CONFIG.currency + n.toLocaleString('en-IN');
+
+  function changeQty(delta){
+    const before = qty;
+    qty = Math.max(1, Math.min(10, qty + delta));
+    document.getElementById('qtyVal').textContent = qty;
+    document.getElementById('headCount').textContent = qty;
+    const total = qty * CONFIG.unitPrice;
+    document.getElementById('orderTotal').textContent = fmt(total);
+    document.getElementById('ckQty').textContent = qty;
+    document.getElementById('ckTotal').textContent = fmt(total);
+  }
+
+  function showCheckout(){
+    document.getElementById('checkout').classList.remove('hidden');
+    document.getElementById('checkout').scrollIntoView({behavior:'smooth'});
+    if(typeof fbq === 'function'){
+      fbq('track', 'InitiateCheckout', {
+        value: qty * CONFIG.unitPrice,
+        currency: 'BDT',
+        num_items: qty
+      });
+    }
+  }
+
+  function setFieldError(id, hasError){
+    document.getElementById(id).classList.toggle('err', hasError);
+  }
+
+  function submitOrder(e){
+    e.preventDefault();
+    const name = document.getElementById('custName').value.trim();
+    const phone = document.getElementById('custPhone').value.trim();
+    const address = document.getElementById('custAddress').value.trim();
+    const city = document.getElementById('custCity').value.trim();
+    const area = document.getElementById('custArea').value.trim();
+    const note = document.getElementById('custNote').value.trim();
+
+    let valid = true;
+    setFieldError('f-name', name.length < 2); if(name.length < 2) valid = false;
+    const phoneOk = phone.replace(/[^0-9]/g,'').length >= 9;
+    setFieldError('f-phone', !phoneOk); if(!phoneOk) valid = false;
+    setFieldError('f-address', address.length < 5); if(address.length < 5) valid = false;
+    setFieldError('f-city', city.length < 2); if(city.length < 2) valid = false;
+
+    document.getElementById('submitError').style.display = 'none';
+
+    if(!valid){
+      document.querySelector('.field.err').scrollIntoView({behavior:'smooth', block:'center'});
+      return false;
+    }
+
+    const btn = document.getElementById('submitBtn');
+    btn.disabled = true;
+    btn.textContent = 'Placing order…';
+
+    const total = qty * CONFIG.unitPrice;
+    const ref = Math.floor(1000 + Math.random()*9000);
+
+    const payload = {
+      access_key: CONFIG.web3formsAccessKey,
+      subject: 'New Estate Four order — #' + ref,
+      from_name: 'Anvaya Spice Co. website',
+      order_ref: ref,
+      name, phone, address, city, area, note,
+      quantity: qty,
+      total: total,
+      currency: CONFIG.currency
+    };
+
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(payload)
+    })
+    .then(res => res.json())
+    .then(data => {
+      if(!data.success) throw new Error(data.message || 'Form submission failed');
+      if(typeof fbq === 'function'){
+        fbq('track', 'Purchase', {
+          value: total,
+          currency: 'BDT',
+          num_items: qty,
+          content_name: 'Estate Four'
+        });
+      }
+      document.getElementById('checkout').classList.add('hidden');
+      document.getElementById('confirm').classList.remove('hidden');
+      document.getElementById('confPhone').textContent = phone;
+      document.getElementById('confRef').textContent = '#' + ref;
+      document.getElementById('confirm').scrollIntoView({behavior:'smooth'});
+    })
+    .catch(err => {
+      console.error(err);
+      btn.disabled = false;
+      btn.textContent = 'Place order — cash on delivery';
+      document.getElementById('submitError').style.display = 'block';
+    });
+
+    return false;
+  }
+</script>
+</body>
+</html>
